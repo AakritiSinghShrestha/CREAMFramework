@@ -9,7 +9,9 @@ public class UnsortedSet implements Set
     @Override
     public void add(Object N) {
         // TODO Auto-generated method stub
-
+        //check if element exist in array 
+        //if it doesn't then add it
+        //else return false 
     }
 
     @Override
