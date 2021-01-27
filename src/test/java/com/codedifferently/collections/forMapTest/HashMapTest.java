@@ -46,7 +46,22 @@ public class HashMapTest {
     @Test
     public void testContainsKey(){
         testMeals.put("breakfast", "waffles");
-        testMeals.containsKey("breakfast");
-        Assert.assertTrue(true);
+        Assert.assertTrue(testMeals.containsKey("breakfast"));
+    }
+
+    @Test
+    public void testRemove(){
+        testMeals.put("breakfast", "waffles");
+        testMeals.remove("breakfast");
+        Assert.assertNull(testMeals.get("breakfast"));
+    }
+
+    @Test
+    public void testGetIndex(){
+        testMeals.put("breakfast", "waffles");
+        int expected = testMeals.getIndex("breakfast");
+        int actual = testMeals.getIndex("breakfast");
+        Assert.assertEquals(expected, actual);
+
     }
 }
