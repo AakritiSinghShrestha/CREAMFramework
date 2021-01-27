@@ -9,13 +9,16 @@ public class UnsortedSet implements Set
 
     public int search(Object element)
     {
+        // Go through array 
         for (int i = 0; i < container.length; i++) 
         {
+            //if element exist return index
             if (container[i] == element) 
             {
                 return i;    
             }    
         }
+            //else return -1
             return -1;
     }
     @Override
@@ -39,7 +42,6 @@ public class UnsortedSet implements Set
 
     @Override
     public void remove(Object element) {
-        // TODO Auto-generated method stub
 
         //find the index 
         int elementsIndex = search(element);
